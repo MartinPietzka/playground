@@ -1,14 +1,14 @@
 package org.example;
 
-public class PrimitivePlayground {
+public class Primitives {
 
     public static void main(String[] args) {
 
         // Ganzzahlen
-        byte byteVariable = 127; // Kleinste Ganzzahl (8 Bit)
-        short shortVariable = 32767; // Kurze Ganzzahl (16 Bit)
-        int intVariable = 2147483647; // Standard-Ganzzahl (32 Bit)
-        long longVariable = 9223372036854775807L; // Große Ganzzahl (64 Bit) - 'L' kennzeichnet ein Long-Literal
+        byte byteVariable = 127; // 8 Bit
+        short shortVariable = 32767; // 16 Bit
+        int intVariable = 2147483647; // 32 Bit
+        long longVariable = 9223372036854775807L; // 64 Bit
 
         System.out.println("Byte: " + byteVariable);
         System.out.println("Short: " + shortVariable);
@@ -16,21 +16,16 @@ public class PrimitivePlayground {
         System.out.println("Long: " + longVariable);
 
         // Gleitkommazahlen
-        float floatVariable = 3.14159f; // Einfache Genauigkeit (32 Bit) - 'f' kennzeichnet ein Float-Literal
-        double doubleVariable = 3.14159265359; // Doppelte Genauigkeit (64 Bit)
+        float floatVariable = 3.14159f; // 32 Bit
+        double doubleVariable = 3.14159265359; // 64 Bit
 
         System.out.println("Float: " + floatVariable);
         System.out.println("Double: " + doubleVariable);
 
         // Zeichen
-        char charVariable = 'A'; // Einzelnes Unicode-Zeichen (16 Bit)
+        char charVariable = 'A'; // 16 Bit
 
         System.out.println("Char: " + charVariable);
-
-        // Boolescher Wert
-        boolean booleanVariable = true; // Wahr oder Falsch
-
-        System.out.println("Boolean: " + booleanVariable);
 
         //Demonstration von Überlauf (Overflow)
         System.out.println("\nDemonstration von Überlauf:");
@@ -47,17 +42,6 @@ public class PrimitivePlayground {
         double anotherDouble = 10.5;
         int anotherInt = (int) anotherDouble; // explizite Typumwandlung (Narrowing) - Achtung Datenverlust!
         System.out.println("Explizite Typumwandlung: " + anotherInt);
-
-        //Demonstration von Operationen mit Primitiven
-        System.out.println("\nDemonstration von Operationen:");
-        int a = 5;
-        int b = 2;
-
-        System.out.println("a + b = " + (a + b));
-        System.out.println("a - b = " + (a - b));
-        System.out.println("a * b = " + (a * b));
-        System.out.println("a / b = " + (a / b)); // Ganzzahldivision (Ergebnis ist 2)
-        System.out.println("a % b = " + (a % b)); // Modulo (Rest der Division)
 
         double c = 5.0;
         double d = 2.0;
