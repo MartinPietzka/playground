@@ -33,9 +33,11 @@ public class Streams {
                 .filter(x -> x % 2 == 0)
                 .forEach(x -> System.out.print(x + " "));
         System.out.println();
+
         Arrays.stream(array)
                 .filter(x -> x % 3 == 0)
                 .forEach(x -> System.out.println(x + " "));
+
         List<Integer> integers = List.of(2,3,2);
         Integer reduced = integers.stream().reduce(10, (a,b) -> a*b);
         System.out.println(reduced);
